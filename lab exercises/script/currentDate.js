@@ -1,6 +1,6 @@
 //Write a JavaScript program to get the current date 
 
- function dateFunction(){
+(function(){
     //declare variables
     const date = new Date();//returns current date and time
 
@@ -14,5 +14,4 @@
         month = "0" + month;
     }
     console.log(`Date: ${day} / ${month} / ${year}`);//expected output - Date: dd-mm-yyyy
-}
-   dateFunction();//call date function
+} ()); //call function with no name
