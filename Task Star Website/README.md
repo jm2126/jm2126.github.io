@@ -8,5 +8,5 @@ This simple to-do list application helps you and manage your tasks.
 - Mark tasks as complete.
 - Mark tasks as priority.
 
-Task Star website wil utilise JavaScript, HTML, CSS in its implementation.
+Task Star website wil utilise JavaScript, HTML, CSS in its implementation. Will be hosted using Github Pages.
 
