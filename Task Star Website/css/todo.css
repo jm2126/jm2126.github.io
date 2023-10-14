@@ -1,1 +1,22 @@
+/*css will have pastel colours, star background, 
+star icons beside new task
+trial colour palette - #BEADFA, #D0BFFF, #DFCCFB, #FFF8C9
+*/
+body{
+    background-color: #DFCCFB;
+}
+/*set size, colour, orientation*/
+.newList {
+    background-color:#BEADFA;
+    margin: auto;
+    float:left;
+}
 
+/*change colour of button using descendant selector*/
+.newList button {
+
+    background-color:#FFF8C9;
+}
+
+/*set size, colour*/
+.newTask {}
