@@ -4,11 +4,22 @@
     <title>Task Star</title>
     <!--link to external javascript-->
     <script src="todo.js"></script>
+
+    <!--link to external css sheet-->
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-    <div>
+    <!--create a div for when we create a new list-->
+    <div id = "newList">
         <!--when button clicked - call createList function-->
-        <button onclick="createList()"> Create new list</button>
+        <button onclick="createList()"> Create new list!</button>
     </div>
+
+     <!--create a div for when we create add tasks to the list-->
+     <div id = "newTask">
+        <!--when button clicked - call createList function-->
+        <button onclick="addTask()"> + </button> <!--replace + with image later-->
+    </div>
+
 </body>
 </html>
