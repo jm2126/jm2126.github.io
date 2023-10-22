@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Grabber</title>
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // When the document is ready (page is loaded), set up the event handler
+            $("button").click(function(){
+                // When the button is clicked, make an AJAX request to the URL
+                $.ajax({
+                    url: "https://api.github.com/repositories/2126244/commits?per_page=1",
+                    dataType: "jsonp", // Use JSONP to handle cross-origin requests
+                    success: function(data){
+                        // If the request is successful, process and update the content
+                        $("#divContent").html(JSON.stringify(data, null, 2));
+                    },
+                    error: function(){
+                        // If there's an error, update the content with an error message
+                        $("#divContent").html("Error fetching data.");
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        body {
+            text-align: center;
+        }
+        #divContent {
+            font-size: 16px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button to trigger data fetching -->
+    <button>Fetch Data</button>
+    <!-- Placeholder for the fetched content -->
+    <div id="divContent">
+        Default Content
+    </div>
+</body>
+</html>
